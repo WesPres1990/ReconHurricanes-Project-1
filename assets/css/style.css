@@ -120,7 +120,7 @@ body {
 
 
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.btn-primary {
   background-color: #8064A2 !important;
 }
 /* MARKETING CONTENT
@@ -210,7 +210,7 @@ button {
   border: 0px;
   color: rgb(24, 23, 23);
   font-size: 15px;
-  width: 60px;
+  /* width: 60px; */
   margin: 10px 0 0;
   font-family: Lato, sans-serif;
   cursor: pointer;
