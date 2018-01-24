@@ -21,9 +21,10 @@ body {
 }
 
 /* titles */
-.titles {
-  font-family: 'Alegreya', serif;
-  font-size: 55px;
+ h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 65px;
+ 
   
 }
 /* Slideshow container */
@@ -184,7 +185,7 @@ font-size: 15px;
 }
 .todo-container h1 {
   font-family: 'Barrio', cursive;
-  font-size: 60px;
+  font-size: 30px;
   margin-bottom: 0px;
   padding: 10px;
   text-align: center;
