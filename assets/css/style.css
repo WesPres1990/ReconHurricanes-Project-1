@@ -117,6 +117,12 @@ body {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #8064A2 !important;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -127,10 +133,15 @@ body {
 }
 .marketing h2 {
   font-weight: 400;
+ 
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
+}
+.nav h2 {
+font-size: 15px;
+
 }
 
 
