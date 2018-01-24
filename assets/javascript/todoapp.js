@@ -1,3 +1,23 @@
+var queryURL = "http://quotes.rest/qod.json";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function(response) {
+      console.log(response);
+   
+var quote = response.contents.quotes[0].quote;
+$("#quote-links").append("Quote of the day: " + quote);
+
+
+var author = response.contents.quotes[0].author;
+$("#author-links").append(author);
+
+console.log(quote);
+console.log(author);
+
+});
+
 //Document is the DOM can be accessed in the console with document.window.
 // Tree is from the top, html, body, p etc.
 //Problem: User interaction does not provide the correct results.
@@ -96,7 +116,7 @@ var ajaxRequest=function(){
 }
 //The glue to hold it all together.
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
+//addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
@@ -126,4 +146,3 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 // Issues with usabiliy don't get seen until they are in front of a human tester.
 //prevent creation of empty tasks.
 //Shange edit to save when you are in edit mode.
-
